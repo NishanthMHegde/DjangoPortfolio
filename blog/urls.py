@@ -17,6 +17,7 @@ Including another URLconf
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('',views.allblog,name = 'allblog')
+    path('',views.allblog,name = 'allblog'),
+    path('<int:blog_id>',views.detail,name = "blog_detail")
    
 ] 

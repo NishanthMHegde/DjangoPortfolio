@@ -48,8 +48,8 @@
         <div class="container">
           {% for blog in blogs.all %}
           <h2> {{blog.title}} </h2>
-          <b> {{blog.publication_date}} </b>
-          <h3> {{blog.body}} </h3>
+          <b> {{blog.publication_date_pretty}} </b>
+          <h3> {{blog.summary}} </h3>
           <img src = "{{blog.image.url}}" alt = "blog image" class = "img-fluid" />
           {% endfor %}
           

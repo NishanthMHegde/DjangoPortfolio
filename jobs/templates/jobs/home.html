@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+{% load staticfiles %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,7 +28,7 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
       <a class="nav-item nav-link active" href="#">Github<span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Resume</a>
+      <a class="nav-item nav-link" href="{% static 'sampleresume.jpg' %}">Resume</a>
       <a class="nav-item nav-link" href="#">Blog</a>
       <a class="nav-item nav-link" href="mailto:nhegde12@gmail.com">Mail Me</a>
     </div>
@@ -40,6 +41,7 @@
       <section class="jumbotron text-center">
         <div class="container">
           <h1 class="jumbotron-heading">Hi, I am Nishanth Hegde!!</h1>
+          <img src = "{% static 'photo.jpg' %}" alt = "Nishanth photo" height=300 />
           
         </div>
       </section>
